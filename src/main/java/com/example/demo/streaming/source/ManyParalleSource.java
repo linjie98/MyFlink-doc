@@ -10,7 +10,6 @@ import org.apache.flink.streaming.api.functions.source.ParallelSourceFunction;
  */
 public class ManyParalleSource implements ParallelSourceFunction<Long> {
 
-
     private long count = 1L;
 
     //循环变量控制
