@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class StreamingFromCollection {
 
     public static void main(String[] args) {
+
         //获取flink运行环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
