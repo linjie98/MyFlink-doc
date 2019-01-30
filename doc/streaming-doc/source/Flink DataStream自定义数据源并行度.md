@@ -23,6 +23,9 @@ Flink官方文档中关于并行源是这样使用的
 #### 实现ParallelSourceFunction与继承RichParallelSourceFunction区别分析
 通过源码结果分析
 ParallelSourceFunction继承于SourceFunction
-    - 实现run与cancel
+    
+    实现run与cancel
+    
 RichParallelSourceFunction继承于AbstractRichFunction并且实现ParallelSourceFunction
-    - 实现run、cancel、open、close（open与close的主要功能是获取(打开)资源链接或关闭资源链接，比如打开数据库等操作，如果放在run中则会每次都去打开一次，而放在open中则不会每次打开，从而减少资源浪费。）
+  
+    实现run、cancel、open、close（open与close的主要功能是获取(打开)资源链接或关闭资源链接，比如打开数据库等操作，如果放在run中则会每次都去打开一次，而放在open中则不会每次打开，从而减少资源浪费。）
