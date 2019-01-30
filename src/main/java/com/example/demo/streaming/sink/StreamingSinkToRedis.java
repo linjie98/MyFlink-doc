@@ -17,6 +17,7 @@ import scala.Tuple2;
  * by:linjie
  */
 public class StreamingSinkToRedis {
+
     public static void main(String[] args) {
         //构建flink环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
