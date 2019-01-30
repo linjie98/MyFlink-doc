@@ -13,6 +13,7 @@ import org.apache.flink.streaming.api.functions.source.SourceFunction;
  */
 public class OneParalleSource implements SourceFunction<Long> {
 
+    //计数变量初始化
     private long count = 1L;
 
     //循环变量控制
