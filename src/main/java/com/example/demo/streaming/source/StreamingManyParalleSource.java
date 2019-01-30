@@ -12,7 +12,6 @@ import org.apache.flink.streaming.api.windowing.time.Time;
  * by：linjie
  */
 public class StreamingManyParalleSource {
-
     public static void main(String[] args) {
         //构建flink环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
