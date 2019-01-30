@@ -11,6 +11,7 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 /**
  * DataStream 算子Transformations的filter过滤方法
  * filter：对传入的数据进行判断，符合条件的数据会被留下
+ * by：linjie
  */
 public class StreamingFilter {
     public static void main(String[] args){
