@@ -4,8 +4,10 @@
 ##### 2、窗口功能(窗口增量/全量聚合)
 ##### 3、自定义window
 
----
+**传送门(实现根据流数据进行分组，每两个相同分组的数据进行一次countwindow)**：https://github.com/ash-ali/MyFlink-doc/blob/master/src/main/java/com/example/demo/streaming/window/StreamWindow.java
 
+演示结果如下(根据输入的字符串进行分组，相同的为一组，当相同的有2个时则进行一次计算)
+![image](https://github.com/ash-ali/MyFlink-doc/blob/master/img/countwindow演示结果.png)
 
 >window是Flink处理流数据的核心，window将流拆分成有限大小的"桶",我们可以在每个桶上进行计算。举个例子，比如现在我们需要对我们的系统每10分钟汇总出一份在过去10分钟内有多少用户浏览了我们的系统，这就需要我们定义窗口，用来收集最近10分钟内的数据，并对这个窗口进行计算。
 
