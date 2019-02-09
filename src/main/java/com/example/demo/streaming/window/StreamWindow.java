@@ -12,7 +12,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
  *
  * 窗口函数ReduceFunction
  *
- * 据流数据进行分组，每两个相同分组的数据进行一次countwindow
+ * 根据流数据进行分组，每两个相同分组的数据进行一次countwindow
  *
  * by：linjie
  */
