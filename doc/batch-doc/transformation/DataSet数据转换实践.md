@@ -1,6 +1,6 @@
 ## DataSet数据转化实践
 
-相关方法操作可查看：https://ci.apache.org/projects/flink/flink-docs-release-1.7/dev/batch/
+相关方法操作可查看：https://ci.apache.org/projects/flink/flink-docs-release-1.6/dev/batch/
 
 笔者实践了两种方法提供参考
 -  Distinct：返回一个数据集中去重之后的元素。
