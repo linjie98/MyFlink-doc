@@ -61,7 +61,7 @@ dataStream.filter(new FilterFunction<Integer>() {
 dataStream.keyBy("someKey") // Key by field "someKey"
 dataStream.keyBy(0) // Key by the first element of a Tuple(指定tuple中的第一个元素作为分组key)
 ```
-等等具体可查阅官方文档：https://ci.apache.org/projects/flink/flink-docs-release-1.7/dev/stream/operators/index.html
+等等具体可查阅官方文档：https://ci.apache.org/projects/flink/flink-docs-release-1.6/dev/stream/operators/index.html
 
 
 #### DataStream Sinks（数据的目的地）
