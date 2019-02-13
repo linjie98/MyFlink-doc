@@ -17,9 +17,9 @@
 欢迎Flink爱好者fork&star，也欢迎提出相关意见供他人学习。
 
 #### 参考文献
-https://ci.apache.org/projects/flink/flink-docs-release-1.7/
+https://ci.apache.org/projects/flink/flink-docs-release-1.6/
 
-https://ci.apache.org/projects/flink/flink-docs-release-1.7/api/java/
+https://ci.apache.org/projects/flink/flink-docs-release-1.6/api/java/
 
 https://flink.apache.org/
 
