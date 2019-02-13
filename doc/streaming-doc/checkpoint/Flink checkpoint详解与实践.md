@@ -19,7 +19,7 @@ checkpoint demo传送门：https://github.com/ash-ali/MyFlink-doc/blob/master/sr
 
 
 #### 2、checkpoint配置
-其配置可参考：https://ci.apache.org/projects/flink/flink-docs-release-1.7/dev/stream/state/checkpointing.html
+其配置可参考：https://ci.apache.org/projects/flink/flink-docs-release-1.6/dev/stream/state/checkpointing.html
 
 
 
@@ -79,7 +79,7 @@ state.checkpoints.dir: hdfs://namenode:40010/flink/checkpoints
 - 如果没有使用checkpoint，则使用"无重启"策略（no restart）
 - 如果激活了checkpoint且尚未配置重启策略，则使用固定延迟策略（fixed-delay），其中 Integer.MAX_VALUE 参数是尝试重启次数
 
-重启策略配置可参考：https://ci.apache.org/projects/flink/flink-docs-release-1.7/dev/restart_strategies.html
+重启策略配置可参考：https://ci.apache.org/projects/flink/flink-docs-release-1.6/dev/restart_strategies.html
 
 
 
