@@ -6,22 +6,29 @@
 
 **所以Flink中Watermark就是检测事件时间处理进度的机制**
 
+---
+
 ### Watermark作用
 Watermark主要用于处理乱序数据，在流处理中，从数据的产生，到source，再到window处理，中间需要花费一些时间。流到window处理的数据都是按照数据产生的时间顺序来的，但是不能排除网络延迟等原因导致乱序数据的产生。比如我们要计算5之前的所有数，但由于乱序，可能4一直没来，但我们又不可能无限期的等下去，所以我们必须利用Watermark机制来保证在一个特定的时间之后，必须触发window来进行计算。
+
+---
 
 ### 单并行度有序流
 ![image](https://github.com/ash-ali/MyFlink-doc/blob/master/img/watermark有序流.png)
 此为有序流，每一个方框代表事件(数据)，里面的数字代表时间戳(有序)，w(11)代表Flink发送的watermark，也就是要计算11之前的数据了，不能再等其他数据了，然后w(20)就要计算20之前的数据了，不能再等之后的数据了。所以其实在有序流中watermark的作用并不大，它只是一个周期性标记。
 
+---
 
 ### 单并行度无序流
 ![image](https://github.com/ash-ali/MyFlink-doc/blob/master/img/watermark无序流.png)
 此为无序流，可以看到，事件时间戳的顺序是无序的，这时候watermark就非常重要了，比如到w(11)时候，会计算11之前的数据9、11、7，然后将12、15放到下一个窗口计算，然后到w(17),就计算17、12、17、14、12、15这些时间戳的数据。
 
+---
 ### 多并行度流的Watermark
 ![image](https://github.com/ash-ali/MyFlink-doc/blob/master/img/多并行度流的watermark.png)
 在多并行度流的环境下，每个线程都会生成watermark，然后在最后操作window的时候，第一次需要使用watermark值最小的来使用，如图29和14应该先选择14，把14之前的数据先算完，然后下一次再用29。
 
+---
 
 ### 生成Watermark
 #### 生成Watermark的时间点
