@@ -18,4 +18,4 @@ Keyed State和Operator State有两种形式：就是原始状态和托管状态
 
 **所以DataStream上的状态推荐使用托管状态，当实现一个自定义的operator时，会使用到原始状态**
 
-具体使用可参考官方文档：https://ci.apache.org/projects/flink/flink-docs-release-1.7/dev/stream/state/state.html
+具体使用可参考官方文档：https://ci.apache.org/projects/flink/flink-docs-release-1.6/dev/stream/state/state.html
