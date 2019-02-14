@@ -26,8 +26,3 @@ https://flink.apache.org/
 https://flink-china.org/
 
 
----
-title:  "在Windows上运行Flink"
-nav-parent_id: setuptutorials
-nav-pos: 30
----
