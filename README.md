@@ -24,3 +24,10 @@ https://ci.apache.org/projects/flink/flink-docs-release-1.6/api/java/
 https://flink.apache.org/
 
 https://flink-china.org/
+
+
+---
+title:  "在Windows上运行Flink"
+nav-parent_id: setuptutorials
+nav-pos: 30
+---
