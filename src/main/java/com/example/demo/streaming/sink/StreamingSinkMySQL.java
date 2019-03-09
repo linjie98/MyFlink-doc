@@ -64,7 +64,6 @@ public class StreamingSinkMySQL extends RichSinkFunction<String> {
             long_money = Long.valueOf(money);
         }
 
-        //
         preparedStatement.setLong(1,long_money);
         preparedStatement.executeUpdate();
 
